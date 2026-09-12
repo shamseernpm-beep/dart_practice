@@ -76,4 +76,6 @@ enum colores {
   whilet,
   green,
   blue
+
+  
 }
