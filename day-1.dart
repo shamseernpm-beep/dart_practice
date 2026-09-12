@@ -37,9 +37,14 @@ void main(){
     String? a=null;
 
     a??="its also null value";
-
     print(a);
 
-    
+    late int c;
 
+    //iam give a print in here that is error because iam not use this variable so that is the problem
+    
+    // so then iam give a value for that variable 
+
+    c=20;
+    print(c);
 }
