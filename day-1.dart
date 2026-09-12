@@ -9,11 +9,15 @@ void main(){
     //?..
 
     //this all are mainly null safrty symbols
+
+
+   first();
+   add();
+   greet();
+}
+
+void first(){
     
-
-
-
-
     String name="riswan";
     print(name);
 
@@ -28,7 +32,10 @@ void main(){
     String? cours="flutter";
     print(cours!.length);
 
-    late double hight;
+}
+
+void add(){
+     late double hight;
 
 
     hight=7.2;
@@ -38,8 +45,11 @@ void main(){
 
     a??="its also null value";
     print(a);
+}
 
-    late int c;
+
+void greet(){
+     late int c;
 
     //iam give a print in here that is error because iam not use this variable so that is the problem
     
@@ -48,3 +58,4 @@ void main(){
     c=20;
     print(c);
 }
+
