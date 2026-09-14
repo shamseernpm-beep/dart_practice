@@ -16,7 +16,7 @@ void main(){
    greet();
 }
 
-void first(){
+ first(){
     
     String name="riswan";
     print(name);
@@ -34,7 +34,7 @@ void first(){
 
 }
 
-void add(){
+ add(){
      late double hight;
 
 
@@ -48,7 +48,7 @@ void add(){
 }
 
 
-void greet(){
+ greet(){
      late int c;
 
     //iam give a print in here that is error because iam not use this variable so that is the problem
