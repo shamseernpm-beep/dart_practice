@@ -8,6 +8,7 @@ person stud = person(
  print(stud.name);
 
  greet();
+ add();
 }
 
 class person{
@@ -31,4 +32,22 @@ void greet(){
 
     print(std1.name);
     print(std2.name);
+}
+
+
+class properties{
+    String? school;
+    int? schoolnum;
+
+     properties.scl(){
+       school="vpk";
+       schoolnum=200;
+    }
+}
+
+void add(){
+properties result= properties.scl();
+
+print(result.school);
+print(result.schoolnum);
 }
