@@ -1,3 +1,28 @@
+// Abstract 
+
+abstract class Human {
+    void walk(){
+        print("walk style");
+    }
+}
+
+class Iam extends Human{
+    void walk(){
+        print("good walk");
+    }
+}
+
+
+greet(){
+    Iam riswan=Iam();
+
+    riswan.walk();
+}
+
+
+
+//polymorphism 
+
 class Animal {
     void sound(){
         print("animal sound");
@@ -20,6 +45,9 @@ class Cat extends Animal {
 }
 
 void main(){
+   greet();
+
+
     Dog dog=Dog();
     Cat cat=Cat();
 
