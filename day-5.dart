@@ -21,6 +21,7 @@ void main(){
     student.add();
 
     per();
+    adout();
 }
 
 
@@ -45,4 +46,26 @@ void per(){
 
 
     person.greet();
+}
+
+
+// inheritance
+
+class Vahicle {
+    void what(){
+        print("vahicle name");
+    }
+}
+
+class Car extends Vahicle {
+    void which(){
+        print("its a car");
+    }
+}
+
+void adout(){
+    Car car=Car();
+
+    car.what();
+    car.which();
 }
