@@ -91,5 +91,7 @@ void pho() {
   Phone phone = Phone();
 
   phone.call();
+  
   phone.takePhoto();
+
 }
