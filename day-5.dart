@@ -22,6 +22,7 @@ void main(){
 
     per();
     adout();
+    pho();
 }
 
 
@@ -68,4 +69,27 @@ void adout(){
 
     car.what();
     car.which();
+}
+
+
+// mixins
+
+
+mixin Camera {
+  void takePhoto() {
+    print("Photo taken");
+  }
+}
+
+class Phone with Camera {
+  void call() {
+    print("Calling");
+  }
+}
+
+void pho() {
+  Phone phone = Phone();
+
+  phone.call();
+  phone.takePhoto();
 }
