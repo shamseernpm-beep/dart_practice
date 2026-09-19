@@ -7,6 +7,7 @@
 void main(){
 
 add();
+greet();
 }
 
 
@@ -67,4 +68,31 @@ late String secondName;
 
 secondName="rishhhhhhhhhh";
 print(secondName);
+}
+
+
+
+// class and object
+
+
+
+class Student {
+    String? whichstudent;
+    String? whereHouse;
+    int? howBalance;
+ 
+}
+
+void greet(){
+    Student student=Student();
+
+
+student.whichstudent="riswan";
+student.whereHouse="malappuram";
+student.howBalance=20000;
+
+
+print(student.whichstudent);
+print(student.whereHouse);
+print(student.howBalance);
 }
