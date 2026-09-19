@@ -1,7 +1,7 @@
 // revers dart topics
 
 
-// null safety 
+
 
 
 void main(){
@@ -11,6 +11,10 @@ add();
 
 
 void add(){
+
+// null safety 
+
+
 
 String? name;
 print(name);
@@ -48,4 +52,19 @@ num
 
 print(num);
 
+
+List<int>? sum=[10,20,30];
+print(sum?[0]);
+
+
+List<int>? tot=[200,300,400,500];
+List<int>? plus=[100, ...?tot];
+
+print(plus);
+
+
+late String secondName;
+
+secondName="rishhhhhhhhhh";
+print(secondName);
 }
