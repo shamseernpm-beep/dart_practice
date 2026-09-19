@@ -1,23 +1,9 @@
 // revers dart topics
 
 
-
-
-
-void main(){
-
-add();
-greet();
-clss();
-para();
-reviwe();
-}
-
-
 void add(){
 
 // null safety 
-
 
 
 String? name;
@@ -161,4 +147,37 @@ void reviwe(){
 
  print(phone.phName);
  print(phone.phPrice);
+}
+
+
+
+class Car{
+
+    // constant consrtuctor 
+
+  final String? carName;
+  final int? carPrice;
+
+const Car(this.carName,this.carPrice);
+}
+
+void vahicle(){
+  const Car car=Car("BMW",2000000);
+
+  print(car.carName);
+  print(car.carPrice);
+}
+
+
+
+
+
+void main(){
+
+add();
+greet();
+clss();
+para();
+reviwe();
+vahicle();
 }
