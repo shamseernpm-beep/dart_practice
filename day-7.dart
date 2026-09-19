@@ -8,6 +8,8 @@ void main(){
 
 add();
 greet();
+clss();
+para();
 }
 
 
@@ -96,3 +98,48 @@ print(student.whichstudent);
 print(student.whereHouse);
 print(student.howBalance);
 }
+
+
+
+// constructors
+
+class Iam{
+
+    // default constructor
+
+
+    String? correctName="riswan";
+    int? correctAge=18;
+
+    Iam();
+}
+
+void clss(){
+    Iam iam=Iam();
+
+    print(iam.correctName);
+    print(iam.correctAge);
+}
+
+
+
+class You{
+
+    // parameterezied constructor 
+
+    String? howtoMove;
+    int? howOldAreYou;
+
+
+    You(this.howtoMove,this.howOldAreYou);
+}
+
+void para(){
+    You you=You("good to move",85);
+
+
+print(you.howtoMove);
+print(you.howOldAreYou);
+}
+
+
