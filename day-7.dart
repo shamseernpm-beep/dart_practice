@@ -10,6 +10,7 @@ add();
 greet();
 clss();
 para();
+reviwe();
 }
 
 
@@ -143,3 +144,21 @@ print(you.howOldAreYou);
 }
 
 
+class Phone{
+     // named constructor 
+
+     String? phName;
+     int? phPrice;
+
+    Phone.details(){
+        phName="i phone 18 pro";
+        phPrice=225000;
+    } 
+}
+
+void reviwe(){
+ Phone phone=Phone.details();
+
+ print(phone.phName);
+ print(phone.phPrice);
+}
