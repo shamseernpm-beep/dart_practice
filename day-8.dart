@@ -2,6 +2,7 @@ void main(){
 add();
 greet();
 see();
+vahicle();
 }
 
 class Student {
@@ -58,4 +59,32 @@ void see(){
    print(mobile._phone);
    mobile._phone="android";
    print(mobile._phone);
+}
+
+
+
+class Car {
+  String? brand;
+  int? year;
+
+
+  Car.oldCar() {
+    brand = "Toyota";
+    year = 2010;
+  }
+
+  Car.newCarCar() {
+    brand = "BMW";
+    year = 2025;
+  }
+}
+
+void vahicle() {
+  Car car = Car.oldCar();
+  Car newCar = Car.newCarCar();
+
+  print(car.brand);
+  print(car.year);
+  print(newCar.brand);
+  print(newCar.year);
 }
