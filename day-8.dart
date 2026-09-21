@@ -1,6 +1,7 @@
 void main(){
 add();
 greet();
+see();
 }
 
 class Student {
@@ -39,4 +40,22 @@ void greet(){
  location.place="malappuram";
  print(location.place);
 
+}
+
+
+class mobile {
+  static String _phone="ios";
+
+  String get phone=>_phone;
+
+  set phone(String newphone){
+    _phone=newphone;
+  }
+
+}
+
+void see(){
+   print(mobile._phone);
+   mobile._phone="android";
+   print(mobile._phone);
 }
