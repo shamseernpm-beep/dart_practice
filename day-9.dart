@@ -1,7 +1,9 @@
 void main(){
 q1();
 q2();
-suuii();
+q3();
+q4();
+
 }
 
 class Student {
@@ -54,16 +56,11 @@ class UPIPayment extends Payment {
     }
 }
 
-void suuii(){
+void q2(){
     UPIPayment upi= UPIPayment(1500,"riswan@upi");
 
     upi.displayPayment();
     }
-
-
-
-
-
 
 class Vahicle {
     String barnd="toyota";
@@ -80,7 +77,7 @@ class Car extends Vahicle {
    
     }
 }
-void main(){
+void q3(){
   Car car=Car();
 
   print(car.barnd);
@@ -88,7 +85,7 @@ void main(){
 
   car.start();
   car.drive();
-};
+}
 
 
 
@@ -113,7 +110,7 @@ class Designer extends Employee{
  }
 }
 
-void main(){
+void q4(){
     Employee developer=Developer();
     Employee designer=Designer();
 
