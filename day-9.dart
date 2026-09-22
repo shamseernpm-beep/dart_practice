@@ -38,7 +38,7 @@ class Car {
 }
 
 q2(){
-   Car car=Car("BMW",2025);
+   Car car=Car("BMW",2026);
 
  print(car.model);
  print(car.year);
