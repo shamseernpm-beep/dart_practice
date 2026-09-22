@@ -30,20 +30,6 @@ q1(){
  print(std2.age);
 }
 
-class Car {
-    String? model;
-    int? year;
-
-    Car(this.model,this.year);
-}
-
-q2(){
-   Car car=Car("BMW",2026);
-
- print(car.model);
- print(car.year);
-}
-
 
 
 
@@ -73,3 +59,64 @@ void suuii(){
 
     upi.displayPayment();
     }
+
+
+
+
+
+
+class Vahicle {
+    String barnd="toyota";
+
+    start(){
+      
+    }
+}
+
+class Car extends Vahicle {
+   start();
+     String model="camry";
+    drive(){
+   
+    }
+}
+void main(){
+  Car car=Car();
+
+  print(car.barnd);
+  print(car.model);
+
+  car.start();
+  car.drive();
+};
+
+
+
+
+
+
+class Employee {
+    work(){
+       print("hello");
+    }
+}
+class Developer extends Employee{
+ @override
+ work(){
+ print("heeeeeeeee");
+ }
+}
+class Designer extends Employee{
+ @override
+ work(){
+ print("haaaaaa");
+ }
+}
+
+void main(){
+    Employee developer=Developer();
+    Employee designer=Designer();
+
+    developer.work();
+    designer.work();
+}
