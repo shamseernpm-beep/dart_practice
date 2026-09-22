@@ -3,6 +3,7 @@ q1();
 q2();
 q3();
 q4();
+q5();
 
 }
 
@@ -116,4 +117,33 @@ void q4(){
 
     developer.work();
     designer.work();
+}
+
+
+
+
+abstract class FoodOrder {
+    placeOrder(){
+
+    }
+}
+class PizzaOrder extends FoodOrder {
+    @override
+ placeOrder(){
+    print("pizza order placed");
+ }
+}
+class BurgerOrder extends FoodOrder {
+@override
+placeOrder(){
+    print("burger order placed");
+}
+}
+
+void q5(){
+ FoodOrder pizza=PizzaOrder();
+ FoodOrder burger=BurgerOrder();
+
+ pizza.placeOrder();
+ burger.placeOrder();
 }
