@@ -1,8 +1,8 @@
 void main(){
-add();
-greet();
-see();
-vahicle();
+q1();
+q2();
+q3();
+q4();
 }
 
 class Student {
@@ -17,7 +17,7 @@ class Student {
     }
 }
 
-void add(){
+q1(){
     Student student=Student();
 
     print(student.name);
@@ -34,7 +34,7 @@ class Location {
         _place=newPlace;
     }
 }
-void greet(){
+q2(){
  Location location=Location();
 
  print(location.place);
@@ -55,7 +55,7 @@ class mobile {
 
 }
 
-void see(){
+q3(){
    print(mobile._phone);
    mobile._phone="android";
    print(mobile._phone);
@@ -79,7 +79,7 @@ class Car {
   }
 }
 
-void vahicle() {
+q4() {
   Car car = Car.oldCar();
   Car newCar = Car.newCarCar();
 
