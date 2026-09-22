@@ -1,7 +1,7 @@
 void main(){
 q1();
 q2();
-
+suuii();
 }
 
 class Student {
@@ -44,3 +44,68 @@ q2(){
  print(car.year);
 }
 
+
+
+// class Payment {
+//     double? amount;
+
+//     Payment(this.amount);
+
+//     void pay(){
+//     //    print("upi amount = $amount");
+//     }
+// }
+
+// class UPIPayment extends Payment {
+//     String? upiId="";
+
+//     UPIPayment(double amount,this.upiId):super(amount);
+//    @override
+//     void pay(){
+// //    print("upi id = $upiId");
+//     }
+
+
+// void displayPayment(){
+//     print("payment amount = $amount");
+//     print("upi id = $upiId");
+//  }
+// }
+// void suuii(){
+//   UPIPayment upi=UPIPayment(1500,"riswan@upi");
+
+//  upi.pay();
+//  upi.displayPayment();
+
+ 
+// };
+
+
+
+class Payment {
+    double? amount;
+
+    Payment(this.amount);
+
+void pay(){
+    print("payment amount = $amount");
+  }
+}
+
+class UPIPayment extends Payment {
+    String? upiId;
+
+    UPIPayment(double amount,this.upiId):super(amount);
+
+    void displayPayment(){
+        pay();
+        print("upi id = $upiId");
+    }
+}
+
+void suuii(){
+    UPIPayment upi=UPIPayment(1500,"riswan@upi");
+   
+    
+    upi.displayPayment();
+ }
