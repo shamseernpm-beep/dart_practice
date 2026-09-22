@@ -4,7 +4,7 @@ q2();
 q3();
 q4();
 q5();
-
+q6();
 }
 
 class Student {
@@ -146,4 +146,23 @@ void q5(){
 
  pizza.placeOrder();
  burger.placeOrder();
+}
+
+
+class Iam {
+    String _you="youuu";
+
+    String get you=>_you;
+
+    set you(String newValue){
+        _you=newValue;
+    }
+}
+
+void q6(){
+Iam iam=Iam();
+
+print(iam.you);
+iam.you="youuuuuuuuuu";
+print(iam.you);
 }
