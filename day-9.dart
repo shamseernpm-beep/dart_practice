@@ -46,50 +46,15 @@ q2(){
 
 
 
-// class Payment {
-//     double? amount;
-
-//     Payment(this.amount);
-
-//     void pay(){
-//     //    print("upi amount = $amount");
-//     }
-// }
-
-// class UPIPayment extends Payment {
-//     String? upiId="";
-
-//     UPIPayment(double amount,this.upiId):super(amount);
-//    @override
-//     void pay(){
-// //    print("upi id = $upiId");
-//     }
-
-
-// void displayPayment(){
-//     print("payment amount = $amount");
-//     print("upi id = $upiId");
-//  }
-// }
-// void suuii(){
-//   UPIPayment upi=UPIPayment(1500,"riswan@upi");
-
-//  upi.pay();
-//  upi.displayPayment();
-
- 
-// };
-
-
 
 class Payment {
     double? amount;
 
     Payment(this.amount);
 
-void pay(){
-    print("payment amount = $amount");
-  }
+    pay(){
+        print("payment amount = $amount");
+    }
 }
 
 class UPIPayment extends Payment {
@@ -97,15 +62,14 @@ class UPIPayment extends Payment {
 
     UPIPayment(double amount,this.upiId):super(amount);
 
-    void displayPayment(){
+    displayPayment(){
         pay();
         print("upi id = $upiId");
     }
 }
 
 void suuii(){
-    UPIPayment upi=UPIPayment(1500,"riswan@upi");
-   
-    
+    UPIPayment upi= UPIPayment(1500,"riswan@upi");
+
     upi.displayPayment();
- }
+    }
