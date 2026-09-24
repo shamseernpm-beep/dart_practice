@@ -6,7 +6,11 @@ q4();
 q5();
 q6();
 q7();
+q8();
+}
 
+void q8(){
+    print("hello world");
 }
 
 class Student {
