@@ -5,6 +5,8 @@ q3();
 q4();
 q5();
 q6();
+q7();
+
 }
 
 class Student {
@@ -117,6 +119,7 @@ void q4(){
 
     developer.work();
     designer.work();
+
 }
 
 
@@ -166,3 +169,21 @@ print(iam.you);
 iam.you="youuuuuuuuuu";
 print(iam.you);
 }
+
+class  mobile {
+  static String _phone="ios";
+
+  String get phone=>_phone;
+
+  set phone(String newphone){
+    _phone=newphone;
+  }
+
+}
+
+q7(){
+   print(mobile._phone);
+   mobile._phone="android";
+   print(mobile._phone);
+}
+
